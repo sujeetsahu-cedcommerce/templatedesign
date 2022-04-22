@@ -1,0 +1,5 @@
+class sujeet
+{
+  private:
+  public:
+};
