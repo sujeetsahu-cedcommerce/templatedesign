@@ -43,12 +43,12 @@
     background-color: green;
     margin: 20px 40px 20px 40px;
   }*/
- /* body
+  body
   {
-      background-color:green;
-      font-family:monospace;
-  }*/
-  .pink-text
+      background-color:#000000;
+  }
+ 
+ /* .pink-text
   {
       color: pink !important;
   }
