@@ -15,6 +15,7 @@
     background-color:green;
 }
 
+
 .box {
     border-style: solid;
     border-color: black;
@@ -30,13 +31,17 @@
   .red-box {
     background-color: crimson;
     color: #fff;
-    padding: 20px;
-    margin: -15px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
   }
 
   .blue-box {
     background-color: blue;
     color: #fff;
-    padding: 20px;
-    margin: -15px;
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 40px;
   }
