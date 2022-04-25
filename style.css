@@ -43,10 +43,10 @@
     background-color: green;
     margin: 20px 40px 20px 40px;
   }*/
-  body
+  /*body
   {
       background-color:#000000;
-  }
+  }*/
  
  /* .pink-text
   {
@@ -60,3 +60,17 @@
  {
      color:orange;
  }*/
+
+
+ .red-text {
+    color: #FF0000;
+  }
+  .green-text {
+    color:#00FF00 ;
+  }
+  .dodger-blue-text {
+    color:#1E90FF ;
+  }
+  .orange-text {
+    color: #FFA500;
+  }
