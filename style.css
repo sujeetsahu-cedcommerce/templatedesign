@@ -10,7 +10,7 @@
 {
     width:100px;
 }*/
-#cat-photo-form
+/*#cat-photo-form
 {
     background-color:green;
 }
@@ -42,4 +42,8 @@
   .green-box {
     background-color: green;
     margin: 20px 40px 20px 40px;
+  }*/
+  body
+  {
+      background-color:black;
   }
