@@ -48,11 +48,11 @@
       background-color:green;
       font-family:monospace;
   }*/
-  /*.pink-text
+  .pink-text
   {
-      color: pink;
+      color: pink !important;
   }
-  .blue-text
+  /*.blue-text
   {
       color: blue;
   }
