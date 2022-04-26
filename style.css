@@ -39,10 +39,7 @@
     border-radius: 70% 70% 60% 60%;
   }
 
-  .belly {
-    top: 60%;
-    left: 2.5%;
-    background: var(--penguin-belly, pink);
+  .belly {Change a variable for a specific areaar(--penguin-belly, pink);
     width: 95%;
     height: 100%;
     border-radius: 120% 120% 100% 100%;
