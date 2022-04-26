@@ -1,112 +1,21 @@
-/*.thick-green-border
-{
-
-    border-width: 10px;
-    border-style: solid;
-    border-color: green;
-    border-radius: 50%;
-}
-.smaller-image
-{
-    width:100px;
-}*/
-/*#cat-photo-form
-{
-    background-color:green;
-}
-
-.injected-text {
-    margin-bottom: -25px;
-    text-align: center;
-  }
-
-  .box {
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    text-align: center;
-  }
-
-  .yellow-box {
-    background-color: yellow;
-    padding: 20px 40px 20px 40px;
-  }
-
-  .red-box {
-    background-color: red;
-    margin: 20px 40px 20px 40px;
-    padding:1.5em;
-
-  }
-
-  .green-box {
-    background-color: green;
-    margin: 20px 40px 20px 40px;
-  }*/
-  body
-  {
-      background-color:rgb(0,0,0);
-  }
- 
- /* .pink-text
-  {
-      color: pink !important;
-  }
-  /*.blue-text
-  {
-      color: blue;
-  }
- #orange-text
- {
-     color:orange;
- }*/
-
-
- /*.red-text {
-    color: #F00;
-  }
-  .green-text {
-    color:#0F0 ;
-  }
-  .fuchsia-text {
-    color:#F0F ;
-  }
-  .cyan-text {
-    color: #0FF;
-  }*/
-
-  /*.red-text {
-    color: rgb(255, 0, 0);
-  }
-  .orchid-text {
-    color: rgb(218, 112, 214);
-  }
-  .sienna-text {
-    color: rgb(160, 82, 45);
-  }
-  .blue-text {
-    color: rgb(0, 0, 255);
-  }*/
-  
-
-  
-  .penguin {
-    --penguin-skin: gray;
+.penguin {
+    --penguin-skin: black;
+    --penguin-belly: gray;
+    --penguin-beak: yellow;
     position: relative;
     margin: auto;
     display: block;
     margin-top: 5%;
     width: 300px;
     height: 300px;
-     
-
   }
 
   .penguin-top {
     top: 10%;
     left: 25%;
+
     /* Change code below this line */
-    background:var(--penguin-skin) ;
+    background: var(--pengiun-skin ,black );
     /* Change code above this line */
 
     width: 50%;
@@ -119,7 +28,7 @@
     left: 23.5%;
 
     /* Change code below this line */
-    background:var(--penguin-skin) ;
+    background: var(--pengiun-skin , black);
     /* Change code above this line */
 
     width: 53%;
@@ -130,11 +39,7 @@
   .right-hand {
     top: 0%;
     left: -5%;
-
-    /* Change code below this line */
-      background:var(--penguin-skin) ;
-    /* Change code above this line */
-
+    background: var(--penguin-skin, black);
     width: 30%;
     height: 60%;
     border-radius: 30% 30% 120% 30%;
@@ -145,11 +50,7 @@
   .left-hand {
     top: 0%;
     left: 75%;
-
-    /* Change code below this line */
-     background:var(--penguin-skin) ;
-    /* Change code above this line */
-
+    background: var(--penguin-skin, black);
     width: 30%;
     height: 60%;
     border-radius: 30% 30% 30% 120%;
@@ -160,7 +61,7 @@
   .right-cheek {
     top: 15%;
     left: 35%;
-    background: white;
+    background: var(--penguin-belly, white);
     width: 60%;
     height: 70%;
     border-radius: 70% 70% 60% 60%;
@@ -169,7 +70,7 @@
   .left-cheek {
     top: 15%;
     left: 5%;
-    background: white;
+    background: var(--penguin-belly, white);
     width: 60%;
     height: 70%;
     border-radius: 70% 70% 60% 60%;
@@ -178,7 +79,7 @@
   .belly {
     top: 60%;
     left: 2.5%;
-    background: white;
+    background: var(--penguin-belly, white);
     width: 95%;
     height: 100%;
     border-radius: 120% 120% 100% 100%;
@@ -187,7 +88,7 @@
   .right-feet {
     top: 85%;
     left: 60%;
-    background: orange;
+    background: var(--penguin-beak, orange);
     width: 15%;
     height: 30%;
     border-radius: 50% 50% 50% 50%;
@@ -198,7 +99,7 @@
   .left-feet {
     top: 85%;
     left: 25%;
-    background: orange;
+    background: var(--penguin-beak, orange);
     width: 15%;
     height: 30%;
     border-radius: 50% 50% 50% 50%;
@@ -254,7 +155,7 @@
   .beak-top {
     top: 60%;
     left: 40%;
-    background: orange;
+    background: var(--penguin-beak, orange);
     width: 20%;
     height: 10%;
     border-radius: 50%;
@@ -263,14 +164,14 @@
   .beak-bottom {
     top: 65%;
     left: 42%;
-    background: orange;
+    background: var(--penguin-beak, orange);
     width: 16%;
     height: 10%;
     border-radius: 50%;
   }
 
   body {
-    background:#c6faf1;
+    background: #c6faf1;
   }
 
   .penguin * {
