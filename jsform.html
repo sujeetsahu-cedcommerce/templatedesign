@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jsform.css">
+    <script src="jsform.js"></script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Age</td>
+                <td><input type="number" id="textage" placeholder="Enter Age"></td>
+            </tr>
+            <tr>
+                <td>weight</td>
+                <td><input type="number" id="textweight" placeholder="Enter Weight"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button  onclick="validate()" >submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+
+    <div id="div1"><h1 id="underweight" style="font-size:bold;"></h1></div>
+    <div id="div2"><h1 id="overweight" style="font-size:bold;"></h1></div>
+    <div id="div3"><h1 id="keepitup" style="font-size:bold;"></h1></div>
+    
+    
+</body>
+</html>
