@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProductTtable</title>
+    <link rel="stylesheet" href="logicproducttable.css">
+</head>
+<body>
+        <form action="#">
+            <table id="table1">
+                <tr><td>Product Id</td>
+                    <td><input type="text" id="productid"></input></td>
+                </tr>
+                <tr><td>Product Name</td>
+                    <td><input type="text" id="productname"></input></td>
+                </tr>
+                <tr><td>Product Price</td>
+                    <td><input type="text" id="productprice"></input></td>
+                </tr>
+            </table>
+
+            <div id="addproduct" onclick="product()"><a>ADD PRODUCT</a></div>
+
+
+            <table id="table2">
+                <tr>
+                    <td >product id</td>
+                    <td >Product Name</td>                    
+                    <td >Product Price</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+
+
+        <script>
+            function product()
+            {
+              let value_id = document.getElementById("productid").value;
+              let value_name = document.getElementById("productname").value;
+              let value_price = document.getElementById("productprice").value;
+
+              const tr1=document.createElement("tr");
+
+              let rec_id=document.createElement("td");
+              let rec_name=document.createElement("td");
+              let rec_price=document.createElement("td");
+
+              node_id=document.createTextNode(value_id);
+              node_name=document.createTextNode(value_name);
+              node_price=document.createTextNode(value_price);
+
+              rec_id.appendChild(node_id);
+              rec_name.appendChild(node_name);
+              rec_price.appendChild(node_price);
+
+             
+              tr1.appendChild(rec_id);
+              tr1.appendChild(rec_name);
+              tr1.appendChild(rec_price);
+
+              document.getElementById("table2").appendChild(tr1);
+            }
+        </script>
+</body>
+</html>
