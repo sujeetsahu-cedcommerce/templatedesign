@@ -22,14 +22,26 @@
     </select>
 
     <input  id="searchitem" type="text">
+
+<!--Add two dropdowns to sort and display a product based on the fields a product have as given in the attachment.--> 
+
     <button onclick="mysearch()">Search</button>
-
     <div id="result"></div>
-
-
-
-
-
+     <br>
+    <select name="dropbox1" id="dropbox1">
+        <option>-sort-</option>
+        <option value="0">Ascending</option>
+        <option value="1">Descending</option>
+    </select>
+    <select id="dropbox2" name="dropbox2" onchange="sorting()">
+        <option>--sort--</option>
+        <option value="0">Company</option>
+        <option value="1">Model</option>
+        <option value="2">Memory</option>
+        <option value="3">Price</option>
+    </select> 
+    <div id="sortingproduct"></div>
+    
 
    <script src="java_script_array.js"></script>
 </body>
