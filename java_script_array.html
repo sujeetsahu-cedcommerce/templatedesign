@@ -11,6 +11,7 @@
 
 <body>
     <div id="divDisp"></div>
+    <table id="adddetail"></table>
     <br>
 
     <label for="selectitem"></label>
@@ -20,14 +21,12 @@
         <option value="2">Memory</option>
         <option value="3">Price</option>
     </select>
-
     <input  id="searchitem" type="text">
-
-<!--Add two dropdowns to sort and display a product based on the fields a product have as given in the attachment.--> 
-
     <button onclick="mysearch()">Search</button>
     <div id="result"></div>
      <br>
+
+
     <select name="dropbox1" id="dropbox1">
         <option>-sort-</option>
         <option value="0">Ascending</option>
@@ -41,6 +40,23 @@
         <option value="3">Price</option>
     </select> 
     <div id="sortingproduct"></div>
+    <br>
+
+    <table>
+        <tr><td>Company</td><td><input id="Company_value" type="text"></td></tr>
+        <tr><td>Model</td><td><input id="Model_value" type="text"></td></tr>
+        <tr><td>Memory</td><td><input id="Memory_value" type="text"></td></tr>
+        <tr><td>Price</td><td><input id="Price_value" type="text"></td></tr>
+        <tr><td><button onclick="adddetails()">Add</button></td></tr>
+    </table>
+    <div id="showDetails"></div>
+
+     
+
+
+    
+
+
     
 
    <script src="java_script_array.js"></script>
