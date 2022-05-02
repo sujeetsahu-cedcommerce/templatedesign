@@ -7,9 +7,7 @@
     <title>java_script_array</title>
     
 </head>
-   
-
-<body>
+<body >
     <div id="divDisp"></div>
     <table id="adddetail"></table>
     <br>
@@ -25,7 +23,6 @@
     <button onclick="mysearch()">Search</button>
     <div id="result"></div>
      <br>
-
 
     <select name="dropbox1" id="dropbox1">
         <option>-sort-</option>
@@ -56,28 +53,25 @@
  <select name="selectproduct" id="selectproduct">
 
     <option selected>-Select Product-</option>
-
     <option value="Samsung Galaxy">Samsung Galaxy</option>
-
     <option value="Motorola G10">Motorola G10</option>
-
     <option value="Nokia S730">Nokia S730</option>
-
     <option value="Xiaomi Note">Xiaomi Note</option>
-
     <option value="Apple S12">Apple S12</option>
 
 </select>
-
 <input id="selectquantity" type="number" placeholder="Quantity">
-
 <button onclick="add()">Add</button>
-
 <button onclick="bill()">Generate Bill</button>
-
 <div id="divbilling"></div>
 
-     
+<!--Add a checkbox with every product. User can select one or more products to delete from the list and display the remaining products after deletion.-->
+
+  
+  <div id="checkdelete"></div>   
+  <button onclick="del()">Delete</button>
+
+
    <script src="java_script_array.js"></script>
 </body>
 </html>
