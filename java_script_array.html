@@ -51,14 +51,33 @@
     </table>
     <div id="showDetails"></div>
 
+     <!--Select product(s) from the list and their quantity and add them to a array then generate a billing invoice according to the attachment.-->
+
+ <select name="selectproduct" id="selectproduct">
+
+    <option selected>-Select Product-</option>
+
+    <option value="Samsung Galaxy">Samsung Galaxy</option>
+
+    <option value="Motorola G10">Motorola G10</option>
+
+    <option value="Nokia S730">Nokia S730</option>
+
+    <option value="Xiaomi Note">Xiaomi Note</option>
+
+    <option value="Apple S12">Apple S12</option>
+
+</select>
+
+<input id="selectquantity" type="number" placeholder="Quantity">
+
+<button onclick="add()">Add</button>
+
+<button onclick="bill()">Generate Bill</button>
+
+<div id="divbilling"></div>
+
      
-
-
-    
-
-
-    
-
    <script src="java_script_array.js"></script>
 </body>
 </html>

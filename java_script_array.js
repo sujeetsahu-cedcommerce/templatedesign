@@ -274,9 +274,70 @@ function mysearch()
        document.getElementById("showDetails").innerHTML=txt;
     }
 
-        // Select product(s) from the list and their quantity and add them to a array then generate a billing invoice according to the attachment.
+ // Select product(s) from the list and their quantity and add them to a array then generate a billing invoice according to the attachment.
 
- 
+        TotalAmount=0;
+        doublearray=[];
+        function add()
+        {
+         var Products=document.getElementById("selectproduct").value;
+        //  console.log(Products);
+         var quantity=document.getElementById("selectquantity").value;
+        //  console.log(quantity);
+         if(Products=="Samsung Galaxy")
+          {
+              Amount=15000*quantity;
+          }
+         else if(Products=="Motorola G10")
+          {
+              Amount=5000*quantity;
+          }
+         else if(Products=="Nokia S730")
+          {
+              Amount=10000*quantity;
+          }
+         else if(Products=="Xiaomi Note")
+          {
+              Amount=20000*quantity;
+          }
+         else if(Products=="Apple S12")
+          {
+              Amount=25000*quantity;
+          }
+        //  console.log(Amount);
+         var store=[];
+         store[0]=Products;
+         store[1]=quantity;
+         store[2]=Amount;
+        //  console.log(store);
+        //  var doublearray=[];
+         var len=doublearray.length;
+         console.log(len);
+         doublearray[len]=store;
+        // doublearray.push(store);
+           console.log(doublearray);
+           TotalAmount+=Amount;
+           console.log(TotalAmount);
+        //    bill();
+          
+        }
+
+        function bill()
+          {
+              console.log(TotalAmount);
+              var txt="<table><tr><td>Bill</td></tr><tr><th>Description</th><th>Quantity</th><th>Amount</th></tr>";
+              for(let i=0;i<doublearray.length;i++)
+              {
+                txt+="<tr>";
+                  for(let j=0;j<=2;j++)
+                   txt+="<td>" + " " + doublearray[i][j]+"</td>";
+                   txt+="</tr>";
+              }
+              txt+="<tr><td>Total</td><td></td><td>" +TotalAmount+ "</td></table>";
+
+              document.getElementById("divbilling").innerHTML=txt;
+          }
+
 
         
     
