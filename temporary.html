@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java_script_array</title>
+    
+</head>
+<body >
+    <div id="divDisp"></div>
+    <table id="adddetail"></table>
+    <br>
+
+    <label for="selectitem"></label>
+    <select id="selectitem" name="selectitem" >
+        <option value="0">Company</option>
+        <option value="1">Model</option>
+        <option value="2">Memory</option>
+        <option value="3">Price</option>
+    </select>
+    <input  id="searchitem" type="text">
+    <button onclick="mysearch()">Search</button>
+    <div id="result"></div>
+     <br>
+
+    <select name="dropbox1" id="dropbox1">
+        <option>-sort-</option>
+        <option value="0">Ascending</option>
+        <option value="1">Descending</option>
+    </select>
+    <select id="dropbox2" name="dropbox2" onchange="sorting()">
+        <option>--sort--</option>
+        <option value="0">Company</option>
+        <option value="1">Model</option>
+        <option value="2">Memory</option>
+        <option value="3">Price</option>
+    </select> 
+    <div id="sortingproduct"></div>
+    <br>
+
+    <table>
+        <tr><td>Company</td><td><input id="Company_value" type="text"></td></tr>
+        <tr><td>Model</td><td><input id="Model_value" type="text"></td></tr>
+        <tr><td>Memory</td><td><input id="Memory_value" type="text"></td></tr>
+        <tr><td>Price</td><td><input id="Price_value" type="text"></td></tr>
+        <tr><td><button onclick="adddetails()">Add</button></td></tr>
+    </table>
+    <div id="showDetails"></div>
+
+     <!--Select product(s) from the list and their quantity and add them to a array then generate a billing invoice according to the attachment.-->
+
+ <select name="selectproduct" id="selectproduct">
+
+    <option selected>-Select Product-</option>
+    <option value="Samsung Galaxy">Samsung Galaxy</option>
+    <option value="Motorola G10">Motorola G10</option>
+    <option value="Nokia S730">Nokia S730</option>
+    <option value="Xiaomi Note">Xiaomi Note</option>
+    <option value="Apple S12">Apple S12</option>
+
+</select>
+<input id="selectquantity" type="number" placeholder="Quantity">
+<button onclick="add()">Add</button>
+<button onclick="bill()">Generate Bill</button>
+<div id="divbilling"></div>
+
+<!--Add a checkbox with every product. User can select one or more products to delete from the list and display the remaining products after deletion.-->
+
+  
+  <div id="checkdelete"></div>   
+  <button onclick="del()">Delete</button>
+  <br>
+
+  <select id="productSelect">
+      <option>-Select Product-</option>
+      <option value="">Samsung</option>
+      <option value="">Nokia</option>
+      <option value="">Xiaomi</option>
+      <option value="">Motorola</option>
+      <option value="">Apple</option>
+  </select>
+  <select id="ratingSelect">
+      <option value="">-Select Rating-</option>
+      <option value="">1</option>
+      <option value="">2</option>
+      <option value="">3</option>
+      <option value="">4</option>
+      <option value="">5</option>
+  </select>
+  <button>Rate</button>
+
+   <script src="java_script_array.js"></script>
+</body>
+</html>

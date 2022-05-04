@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java_script_array</title>
+    
+</head>
+   
+
+<body>
+    <div id="divDisp"></div>
+    <table id="adddetail"></table>
+    <br>
+
+    <label for="selectitem"></label>
+    <select id="selectitem" name="selectitem" >
+        <option value="0">Company</option>
+        <option value="1">Model</option>
+        <option value="2">Memory</option>
+        <option value="3">Price</option>
+    </select>
+    <input  id="searchitem" type="text">
+    <button onclick="mysearch()">Search</button>
+    <div id="result"></div>
+     <br>
+
+
+    <select name="dropbox1" id="dropbox1">
+        <option>-sort-</option>
+        <option value="0">Ascending</option>
+        <option value="1">Descending</option>
+    </select>
+    <select id="dropbox2" name="dropbox2" onchange="sorting()">
+        <option>--sort--</option>
+        <option value="0">Company</option>
+        <option value="1">Model</option>
+        <option value="2">Memory</option>
+        <option value="3">Price</option>
+    </select> 
+    <div id="sortingproduct"></div>
+    <br>
+
+    <table>
+        <tr><td>Company</td><td><input id="Company_value" type="text"></td></tr>
+        <tr><td>Model</td><td><input id="Model_value" type="text"></td></tr>
+        <tr><td>Memory</td><td><input id="Memory_value" type="text"></td></tr>
+        <tr><td>Price</td><td><input id="Price_value" type="text"></td></tr>
+        <tr><td><button onclick="adddetails()">Add</button></td></tr>
+    </table>
+
+    
+
+
+    
+
+   <script src="java_script_array.js"></script>
+</body>
+</html>
