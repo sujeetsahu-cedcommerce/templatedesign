@@ -1,1 +1,2 @@
-var a=9;
+var myFirstName="sujeet";
+var myLastName="sahu";
