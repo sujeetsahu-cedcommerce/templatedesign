@@ -1,7 +1,4 @@
-function functionWithArgs(a,b)
+function timesFive(a)
 {
-  var sum=a+b;
-  console.log(sum);
+  return 5*a;
 }
-functionWithArgs(1,2);
-functionWithArgs(7,9);
