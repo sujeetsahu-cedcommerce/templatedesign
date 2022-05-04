@@ -1,5 +1,7 @@
-function reusableFunction()
+function functionWithArgs(a,b)
 {
-  console.log("Hi World");
+  var sum=a+b;
+  console.log(sum);
 }
-reusableFunction();
+functionWithArgs(1,2);
+functionWithArgs(7,9);
