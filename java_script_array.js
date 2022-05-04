@@ -810,3 +810,47 @@ function Update(){
 
 }
 
+// Filter and display the products with in a given price range.    
+
+function productSearch(){
+
+    var min=document.getElementById("minimum").value;
+
+    var max=document.getElementById("maximum").value;
+
+    var txt="<table><tr><th>Company</th><th>Model</th><th>Memory</th><th>Price</th></tr>"
+
+    for(let i=0;i<product.length;i++){
+
+        for(let j=3;j<=3;j++){
+
+            if(product[i][j]>=min && product[i][j]<=max)
+
+            {
+
+                txt += "<tr>";
+
+                for( let k=0;k<=3;k++)
+
+                {
+
+                    var z = product[i][k];
+
+                    txt+="<td>" + z + "</td>";
+
+                }
+
+                txt += "</tr>";
+
+            }
+
+        }
+
+    }
+
+   txt+="</table>";
+
+   document.getElementById("SearchedItem").innerHTML=txt;
+
+}
+
