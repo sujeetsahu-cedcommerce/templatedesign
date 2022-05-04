@@ -542,3 +542,227 @@ document.getElementById("checkdelete").innerHTML=txt;
 
     }
 
+// Add one more column for quantity available for each of the product. It will be updated when a product is added to cart.
+
+var txt="<table><tr><th>Company</th><th>Model</th><th>Memory</th><th>Price</th><th>Quantity</th></tr>"
+
+for(let i=0;i<product.length;i++)
+
+{
+
+    txt+="<tr>"
+
+    for(let j=0;j<=4;j++)
+
+    {
+
+        if(j==4)
+
+        {
+
+            product[i][j]=20;
+
+        }
+
+        txt+="<td>"+ product[i][j] +"</td>";
+
+    }
+
+    txt+="</tr>";
+
+}
+
+txt+="</table>";
+
+document.getElementById("divQuantity").innerHTML=txt;
+
+function Cart(){
+
+    selected_Item=document.getElementById("itemSelect").value;
+
+    selected_Quan=document.getElementById("addCart").value;
+
+    Remaining_Quan=product[selected_Item][4]-selected_Quan;
+
+    console.log(selected_Item);
+
+    console.log(selected_Quan);
+
+    console.log(Remaining_Quan);
+
+     // if(selected_Quan>product[selected_Item][4])
+
+    // {
+
+       
+
+    //     confirm("sorry you can purchase only "+ product[selected_Item][4] +" product");
+
+    // }
+
+   if(Remaining_Quan<0)
+
+    {
+
+        let x="Sorry product is out of Stock";
+
+        alert(x);
+
+    }
+
+    var txt="<table><tr><th>Company</th><th>Model</th><th>Memory</th><th>Price</th><th>Quantity</th></tr>"
+
+   for(let i=0;i<product.length;i++)
+
+   {
+
+     txt+="<tr>"
+
+     for(let j=0;j<=4;j++)
+
+     {
+
+        if(i==selected_Item && j==4 && Remaining_Quan>=0)
+
+        {
+
+            product[i][j]=Remaining_Quan;
+
+        }
+
+        txt+="<td>"+ product[i][j] +"</td>";
+
+     }
+
+    txt+="</tr>";
+
+   }
+
+   txt+="</table>";
+
+   document.getElementById("divQuantity").innerHTML=txt;
+
+}
+
+doublearray=[];
+
+function total(){
+
+    TotalAmount=0;
+
+    add();
+
+    function add(){
+
+        var Amount=0;
+
+        var Products=product[document.getElementById("itemSelect").value][0];
+
+        console.log(Products);
+
+        var quantity=document.getElementById("addCart").value;
+
+        console.log(quantity);
+
+        if(Products=="Samsung")
+
+        {
+
+          Amount=15000*quantity;
+
+        }
+
+        else if(Products=="Motorola")
+
+        {
+
+          Amount=5000*quantity;
+
+        }
+
+        else if(Products=="Nokia")
+
+        {
+
+          Amount=10000*quantity;
+
+        }
+
+        else if(Products=="Xiaomi")
+
+        {
+
+          Amount=20000*quantity;
+
+        }
+
+        else if(Products=="Apple")
+
+        {
+
+          Amount=25000*quantity;
+
+        }
+
+//  console.log(Amount);
+
+       var store=[];
+
+       store[0]=Products;
+
+       store[1]=quantity;
+
+       store[2]=Amount;
+
+//  console.log(store);
+
+//  var doublearray=[];
+
+       var len=doublearray.length;
+
+       console.log(len);
+
+       doublearray[len]=store;
+
+// doublearray.push(store);
+
+       console.log("doublearray",doublearray);
+
+       TotalAmount+=Amount;
+
+       console.log(TotalAmount);
+
+    }
+
+    bill();
+
+    function bill(){
+
+         console.log(TotalAmount);
+
+         var txt="<table><tr><th>Bill</th></tr><tr><th>Description</th><th>Quantity</th><th>Amount</th></tr>";
+
+         for(let i=0;i<doublearray.length;i++)
+
+         {
+
+             txt+="<tr>";
+
+             for(let j=0;j<=2;j++){
+
+                 txt+="<td>" + " " + doublearray[i][j]+"</td>";
+
+             }
+
+             txt+="</tr>";
+
+         }
+
+         txt+="<tr><td>Total</td><td></td><td>" +TotalAmount+ "</td></table>";
+
+         document.getElementById("generate").innerHTML=txt;
+
+    }
+
+}
+

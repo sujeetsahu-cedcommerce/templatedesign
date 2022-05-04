@@ -184,7 +184,38 @@
 
   <hr>
 
-  
+  <!-- Add one more column for quantity available for each of the product. It will be updated when a product is added to cart. -->
+
+  <select id="itemSelect">
+
+    <option>-Select Item-</option>
+
+    <option value="0">Samsung</option>
+
+    <option value="1">Nokia</option>
+
+    <option value="2">Xiaomi</option>
+
+    <option value="3">Motorola</option>
+
+    <option value="4">Apple</option>
+
+  </select>
+
+  <input id="addCart" type="text">
+
+  <button onclick="Cart()">Add</button>
+
+  <button onclick="total()">Generate Bill</button>
+
+  <div id="divQuantity"></div>
+
+  <div id="generate"></div>
+
+   <br><br><hr>
+
+ 
+
    <script src="java_script_array.js"></script>
 
 </body>
