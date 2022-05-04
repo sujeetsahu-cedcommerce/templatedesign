@@ -766,3 +766,47 @@ function total(){
 
 }
 
+// Inventory manager should be able to update the quantity of a products. Display the updated quantity.
+
+function Update(){
+
+    var Dev=document.getElementById("selectDevices").value;
+
+    var Qn=document.getElementById("addQuantity").value;
+
+    console.log(Dev);
+
+    console.log(Qn);
+
+    product[Dev][4]=Qn;
+
+    console.log(product[Dev][4]);
+
+    repeatative();
+
+    function repeatative(){
+
+        var txt="<table><tr><th>Company</th><th>Model</th><th>Memory</th><th>Price</th><th>Quantity</th></tr>"
+
+        for(let i=0;i<product.length;i++){
+
+            txt+="<tr>"
+
+            for(let j=0;j<=4;j++){
+
+                txt+="<td>"+ product[i][j] +"</td>";
+
+            }
+
+            txt+="</tr>";
+
+        }
+
+        txt+="</table>";
+
+        document.getElementById("divQuantity").innerHTML=txt;
+
+    }
+
+}
+
