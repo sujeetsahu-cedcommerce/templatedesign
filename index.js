@@ -1,6 +1,9 @@
-function checkEqual(a, b) {
-    
-    return a == b ? "Equal" : "Not Equal";
-}
+function checkSign(num) {
 
-checkEqual(1, 2);
+    return (num>0) ? "positive" 
+       : (num<0) ? "negative"
+       :"zero";
+    
+    }
+    
+    checkSign(10);
