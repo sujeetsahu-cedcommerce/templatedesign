@@ -1,0 +1,11 @@
+/* #main
+{
+    border: 1px solid black;
+    width:15% ;
+} */
+input
+{
+    border-style: solid;
+    border-color: black;
+    width: 29.5%;
+}
