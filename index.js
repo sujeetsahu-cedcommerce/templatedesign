@@ -1,3 +1,5 @@
+// Multiple Identical Options in Switch Statements
+
 function sequentialSizes(val) {
 
     let answer = "";
@@ -37,5 +39,10 @@ function sequentialSizes(val) {
          answer = "High";
 
     }
+    // Only change code above this line
 
-}
+    return answer;
+  }
+  sequentialSizes(1);
+
+ 
