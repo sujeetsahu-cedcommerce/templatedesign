@@ -1,14 +1,9 @@
-// Only change code below this line
-function countdown(n){
-    if(n < 1){
-       return [];
+function rangeOfNumbers(startNum, endNum) {
+    if (startNum > endNum) {
+      return [];
+    } else {
+      var numbers = rangeOfNumbers(startNum, endNum - 1);
+      numbers.push(endNum);
+      return numbers;
     }
-    else
-    {
-      const arr =countdown(n-1);
-      arr.unshift(n);
-      return arr; 
-    }
-      
   }
-  // Only change code above this line
