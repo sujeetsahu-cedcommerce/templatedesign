@@ -1,15 +1,23 @@
-// Returning Boolean Values from Functions
 
-function isLess(a, b) {
+
+ 
+
+// Setup
+
+function abTest(a, b) {
 
     // Only change code below this line
 
-     return a < b;
+     if( a < 0 || b < 0)
 
-    }
+        return;
 
     // Only change code above this line
 
  
 
-  isLess(10, 15);
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+
+  }
+
+  abTest(2,20);
