@@ -1,13 +1,19 @@
 // Setup
-const myDog = {
-    "name": "Happy Coder",
-    "legs": 4,
-    "tails": 1,
-    "friends": ["freeCodeCamp Campers"],
-    "bark": "woof"
-  };
+function phoneticLookup(val) {
+    let result = "";
   
-  // Only change code below this line
+    // Only change code below this line
+    const lookup = {
+      "alpha":"Adams",
+      "bravo":"Boston",          
+      "delta":"Denver",
+      "charlie":"Chicago",
+      "echo":"Easy",
+      "foxtrot":"Frank"
+    };
+    result=lookup[val];
+    // Only change code above this line
+    return result;
+  }
   
-  // delete myDog["tails"];
-  delete myDog.tails;
+  phoneticLookup("charlie");
