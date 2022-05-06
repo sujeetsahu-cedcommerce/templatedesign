@@ -14,4 +14,34 @@ $(document).ready(function(){
     $("#oddbutton").click(function(){
         $("tr:odd").css("background-color", "DodgerBlue");
     });
+
+
+    $("#submit").click(function(){
+        if($("#firstname").val() == ""){
+            
+                $("#firstname").css("background-color", "red");
+                $("#firstname").focus();
+                alert("please fill first name");
+            }
+        
+         else if($("#secondname").val() == ""){
+           
+                $("#secondname").css("background-color", "red");
+                $("#secondname").focus();
+                alert("please fill second name");
+         }
+         else{
+            alert("submitted");
+         }
+
+
+        });
+
+        $("#firstname").keydown(function(){
+            $("#firstname").css("background-color", "white");
+        });
+        $("#secondname").keydown(function(){
+            $("#secondname").css("background-color", "white");
+        });
+
 });
