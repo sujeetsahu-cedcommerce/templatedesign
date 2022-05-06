@@ -44,4 +44,17 @@ $(document).ready(function(){
             $("#secondname").css("background-color", "white");
         });
 
+        
+        $("#eduinfo").on('click','.minus',function(){
+            $(this).closest('tr').remove();
+          });
+
+        $("#eduinfo").on('click','.plus',function(){
+            studentTable();
+        });
+        studentTable();
+        function studentTable()
+        {
+             $("#eduinfo").append("<table><tr><td><input id='enterClass' type='text' placeholder='enter class'></td><td><input id='enterboard' type='text' placeholder='enter board'></td><td><input id='entermarks' type='text' placeholder='enter marks'></td><td><input id='enterdivision' type='text' placeholder='enter division'></td><td><button type='button' class='plus'>+</ td><td><button type='button' class='minus'>-</button></td> </tr></table>")
+        }
 });
