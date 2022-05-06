@@ -68,5 +68,5 @@ $(document).ready(function(){
     setInterval(function(){
         $(".test p:first-child").css("color","blue");
         $(".test p:last-child").css("color","green");
-    },2000);
+    },5000);
 });
