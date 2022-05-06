@@ -6,5 +6,12 @@ $(document).ready(function(){
             $("#message").css("color", "red");
         }
     });
-});
 
+
+    $("#evenbutton").click(function(){
+        $("tr:even").css("color", "LightGray");
+    });
+    $("#oddbutton").click(function(){
+        $("tr:odd").css("background-color", "DodgerBlue");
+    });
+});
