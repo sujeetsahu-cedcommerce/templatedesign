@@ -81,9 +81,6 @@ $(document).ready(function(){
             // Change src attribute of image
             $("img").attr("src", "download.jpeg");
           });
-        
-
-      
 });
 
 
