@@ -81,6 +81,42 @@ $(document).ready(function(){
             // Change src attribute of image
             $("img").attr("src", "download.jpeg");
           });
+
+        
+
+          $("#product") .on("change","#size",function()
+          {
+              var price = 0;
+              if($(this).val()=="small"){
+                   price = 1000;
+              }
+              else if($(this).val()=="medium"){
+                   price = 2000;
+              }
+              else{
+                  price =  3000;
+              }
+              $("#bag-price").text(price);
+          });
+
+          $("#product") .on("change" ,"#color",function(){
+            var price = 0;
+            if($(this).val()=="grey"){
+                price =100;
+            }
+            else if($(this).val()=="black"){
+                price =150;
+            }
+            else{
+                price =200;
+            }
+            $("#tshirt-price").text(price);
+        });
+
+         
+          
+         
+
 });
 
 

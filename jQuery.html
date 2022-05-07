@@ -7,6 +7,7 @@
     <title>Validate form password</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="jQuery.js"></script>
+    <link rel="stylesheet" href="jQuery.css">
 </head>
  <body>
     <table>
@@ -99,7 +100,30 @@
      <button id="next">next</button>
     </div><br>
     <div class="photo"><img  src="sunrise.jpeg" alt="ariel view of sun" id="photo"></div>
-    
+<div>
+    <span>product</span>
+   <table border="5px"  width="50%"id="product">
+       <tr class="item"><th>Name</th>
+       <th>Size/color</th>
+       <th>Price</th></tr>
+       <tr class="item"><td>Duffle Bag</td>
+       <td><select name="size" id="size">
+           <option value="small">small</option>
+           <option value="medium">medium</option>
+           <option value="large">large</option>
+       </select></td>
+       <td id="bag-price"></td></tr>
+
+       <tr class="item">
+        <td>T-Shirts</td>
+        <td><select name="color" id="color">
+            <option value="grey">grey</option>
+            <option value="black">black</option>
+            <option value="red">red</option>
+            </select></td>
+        <td id="tshirt-price"></td></tr>
+    </table>
+</div>
     
 </body>
 </html>

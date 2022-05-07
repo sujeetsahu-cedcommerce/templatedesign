@@ -1,0 +1,17 @@
+span
+{
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 5%;
+}
+#color
+{
+    text-align: center;
+    width: 100%;
+}
+
+#size
+{
+    text-align: center;
+    width: 100%;
+}
