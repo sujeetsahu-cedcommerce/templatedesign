@@ -15,3 +15,11 @@ span
     text-align: center;
     width: 100%;
 }
+#list-Of-product
+{
+    display: inline-block;
+}
+#plus-button
+{
+    display: inline-block;
+}
